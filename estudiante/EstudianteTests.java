@@ -33,7 +33,7 @@ public class EstudianteTests {
     @Test
     public void testSumarCreditos() {
         Estudiante estudiante = new Estudiante("Juan", "123");
-        estudiante.sumarCreditos(10);
-        assertEquals(estudiante.getCreditos(), 10);
+        estudiante.sumarCreditos(50);
+        assertEquals(estudiante.getCreditos(), 50);
     }
 }
