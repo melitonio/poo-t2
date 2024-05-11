@@ -8,7 +8,7 @@ public class EstudianteTests {
         @Test
         public void testNombre() {
             Estudiante estudiante = new Estudiante("Juan", "123");
-            assert estudiante.getNombre() == "Juan";
+            assertEquals(estudiante.getNombre(), "Juan");
         }
     
         @Test
@@ -20,7 +20,7 @@ public class EstudianteTests {
         @Test
         public void testCreditos() {
             Estudiante estudiante = new Estudiante("Juan", "123");
-            assert estudiante.getCreditos() == 0;
+            assertEquals(estudiante.getCreditos(), 0);
         }
     
         @Test
@@ -34,6 +34,6 @@ public class EstudianteTests {
         public void testSumarCreditos() {
             Estudiante estudiante = new Estudiante("Juan", "123");
             estudiante.sumarCreditos(10);
-            assert estudiante.getCreditos() == 10;
+            assertEquals(estudiante.getCreditos(), 10);
         }
 }
