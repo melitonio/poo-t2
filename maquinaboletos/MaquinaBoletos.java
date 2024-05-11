@@ -29,10 +29,10 @@ public class MaquinaBoletos {
 
     public void imprimirBoleto() {
         if (saldo >= precio) {
-            System.out.println("##################");
-            System.out.println("# Boleto de futbol #");
-            System.out.println("# Precio: " + precio + " #");
-            System.out.println("##################");
+            System.out.println("####################");
+            System.out.println("# Boleto de futbol");
+            System.out.println("# Precio: " + precio + " XAF" );
+            System.out.println("####################");
             System.out.println();
             total = total + precio;
             saldo = saldo - precio;

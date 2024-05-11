@@ -32,12 +32,12 @@ public class MaquinaBoletosTests {
 
     @Test
     public void testImprimirBoleto() {
-        MaquinaBoletos maquina = new MaquinaBoletos(25);
-        maquina.ingresarDinero(95);
-        assert maquina.getSaldo() == 95;
+        MaquinaBoletos maquina = new MaquinaBoletos(500);
+        maquina.ingresarDinero(2000);
+        assert maquina.getSaldo() == 2000;
         maquina.imprimirBoleto();
-        assert maquina.getSaldo() == 70;
-        assert maquina.getTotal() == 25;
+        assert maquina.getSaldo() == 1500;
+        assert maquina.getTotal() == 500;
     }
  
 }
