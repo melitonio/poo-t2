@@ -5,6 +5,18 @@ import org.junit.Test;
 
 public class EstudianteTests {
 
+    // crear método main
+    public static void main(String[] args) {
+        EstudianteTests tests = new EstudianteTests();
+        tests.testNombre();
+        tests.testNombre();
+        tests.testId();
+        tests.testCreditos();
+        tests.testNombreUsuario();
+        tests.testSumarCreditos();
+    }
+
+
     @Test
     public void testNombre() {
         Estudiante estudiante = new Estudiante("Juan", "123");
